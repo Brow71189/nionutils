@@ -32,6 +32,7 @@ A utility library of useful Python objects.
 -  Events
 -  Observable
 -  Bindings, Converters, Models
+-  Color
 -  Geometry
 -  Persistence
 -  Process, Threads
@@ -150,6 +151,13 @@ target. For instance, a binding between a float property and a user
 interface text field will need to convert from float to string and back.
 Converters between value and strings are included for integer, float,
 percentage, check state, and UUID to strings.
+
+Color
+~~~~~
+
+The Color class holds a color string and converts it, for instance to
+its red, green, blue and alpha components. It reads colors as CSS does:
+color names, hex with or without alpha, and ``rgb()`` and ``rgba()``.
 
 Geometry
 ~~~~~~~~
